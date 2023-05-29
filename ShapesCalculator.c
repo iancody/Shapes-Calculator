@@ -2,7 +2,7 @@
 //Author: Ian Cody
 //Create Date 5/27/2023
 //Description: simple calculator for a small sample of 2D and 3D shapes
-//Name: CommonShapesCalculator
+//Name: ShapesCalculator
 ///////////////////////////////////////
 
 #include <stdio.h>
