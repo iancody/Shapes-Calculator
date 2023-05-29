@@ -40,8 +40,8 @@ int main()
 //int choice;
 char choice;
 int option;
-int secondOption;
-int thirdOption;
+int optionsTwoD;
+int optionsThreeD;
 double base;
 double height;
 double width;
@@ -75,7 +75,7 @@ switch (choice){
     case 'a': //Rectangle
         
         printf("Rectangle\n");
-        option = twoDimensionalMenu(secondOption);
+        option = twoDimensionalMenu(optionsTwoD);
 
         if (option == 1){ //Area 
             area = areaRectangle(base, height);
@@ -92,7 +92,7 @@ switch (choice){
     case 'b': // Circle
 
         printf("Circle\n");
-        option = circleMenu(secondOption);
+        option = circleMenu(optionsTwoD);
     
         if (option == 1){ //Area
             area = areaCircle(radius);
@@ -113,7 +113,7 @@ switch (choice){
     case 'c': // Triangle
 
         printf("Triangle\n");
-        option = twoDimensionalMenu(secondOption);
+        option = twoDimensionalMenu(optionsTwoD);
 
         if (option == 1){ //Area
             area = areaTriangle(base, height);
@@ -129,7 +129,7 @@ switch (choice){
     case 'd': //Oval
 
         printf("Oval\n");
-        option = twoDimensionalMenu(secondOption);
+        option = twoDimensionalMenu(optionsTwoD);
 
         if (option == 1){ //Area
             area = areaOval(majorAxis, minorAxis);
@@ -145,7 +145,7 @@ switch (choice){
     case 'e': // N-gon
 
         printf("N-gon\n");
-        option = twoDimensionalMenu(secondOption);
+        option = twoDimensionalMenu(optionsTwoD);
 
         if (option == 1){ //Area
             area = areaNgon (apothem, sideLength, numberOfSides);
@@ -161,7 +161,7 @@ switch (choice){
     case 'f': //Rhombus
 
         printf("Rhombus\n");
-        option = twoDimensionalMenu(secondOption);
+        option = twoDimensionalMenu(optionsTwoD);
 
         if (option == 1){ //Area 
             area = areaRhombus (firstDiagonal, secondDiagonal);
@@ -178,7 +178,7 @@ switch (choice){
     case 'g': // Cuboid
 
         printf("Cuboid\n");
-        option = threeDimensionalMenu(thirdOption);
+        option = threeDimensionalMenu(optionsTwoD);
 
         if (option == 1){ //Surface Area
             surfaceArea = surfaceAreaCuboid (length, width, height);
@@ -198,7 +198,7 @@ switch (choice){
     case 'h': // Sphere
 
         printf("Sphere\n");
-        option = threeDimensionalMenu(thirdOption);
+        option = threeDimensionalMenu(optionsThreeD);
 
         if (option == 1){ //Surface Area
             surfaceArea = surfaceAreaSphere(radius);
@@ -219,7 +219,7 @@ switch (choice){
     case 'i': // Cone
 
         printf("Cone\n");
-        option = threeDimensionalMenu(thirdOption);
+        option = threeDimensionalMenu(optionsThreeD);
 
         if (option == 1){ //Surface Area
             surfaceArea = surfaceAreaCone(radius, height);
@@ -240,7 +240,7 @@ switch (choice){
     case 'j': // Torus
 
         printf("Torus\n");
-        option = threeDimensionalMenu(thirdOption);
+        option = threeDimensionalMenu(optionsThreeD);
 
         if (option == 1){ //Surface Area
             surfaceArea = surfaceAreaTorus(majorAxis, minorAxis);
@@ -261,7 +261,7 @@ switch (choice){
     case 'k': // Cylinder
 
         printf("Cylinder\n");
-        option = threeDimensionalMenu(thirdOption);
+        option = threeDimensionalMenu(optionsThreeD);
 
         if (option == 1){ //Surface Area
             surfaceArea = surfaceAreaCylinder(radius, height);
@@ -282,7 +282,7 @@ switch (choice){
     case 'l': // Square Pyramid
 
         printf("Square Pyramid\n");
-        option = threeDimensionalMenu(thirdOption);
+        option = threeDimensionalMenu(optionsThreeD);
 
         if (option == 1){ //Surface Area
             surfaceArea = surfaceAreaSquarePyramid(baseEdge, height);
